@@ -20,8 +20,14 @@ import java.io.IOException;
 public class CompareController {
     @Resource
     ComparePropertiesService comparePropertiesService;
+
     @PostMapping("properties")
     private CompareResult<String, String> compareProperties(@RequestBody CompareParam<String> compareParam) throws IOException {
         return comparePropertiesService.compare(compareParam);
+    }
+
+    @PostMapping("propertiesKey")
+    private CompareResult<String, String> comparePropertiesKey(@RequestBody CompareParam<String> compareParam) throws IOException {
+        return comparePropertiesService.compareKey(compareParam);
     }
 }

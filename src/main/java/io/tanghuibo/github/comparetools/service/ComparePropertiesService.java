@@ -19,4 +19,12 @@ public interface ComparePropertiesService {
      * @throws IOException
      */
     CompareResult<String, String> compare(CompareParam<String> compareParam) throws IOException;
+
+    /**
+     * 只比较key
+     * @param compareParam
+     * @return
+     *  @throws IOException
+     */
+    CompareResult<String, String> compareKey(CompareParam<String> compareParam) throws IOException;
 }

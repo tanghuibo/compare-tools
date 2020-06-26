@@ -22,6 +22,15 @@ public class ComparePropertiesServiceImpl implements ComparePropertiesService {
 
     @Override
     public CompareResult<String, String> compare(CompareParam<String> compareParam) throws IOException {
+        return compare(compareParam, String::compareTo);
+    }
+
+    @Override
+    public CompareResult<String, String> compareKey(CompareParam<String> compareParam) throws IOException {
+        return compare(compareParam, (a, b) -> 0);
+    }
+
+    public CompareResult<String, String> compare(CompareParam<String> compareParam, Comparator<String> comparator) throws IOException {
         CompareResultBuilder<String, String> compareResultBuilder = new CompareResultBuilder<>();
 
         String oldData = compareParam.getOldData();
@@ -54,7 +63,7 @@ public class ComparePropertiesServiceImpl implements ComparePropertiesService {
             if(compareInt == 0) {
                 oldEntry = getNext(oldIterator);
                 newEntry = getNext(newIterator);
-                if(!Objects.equals(oldValue, newValue)) {
+                if(comparator.compare(oldValue, newValue) != 0) {
                     compareResultBuilder.insertDiff(oldKey, oldValue, newValue);
                 }
                 continue;
