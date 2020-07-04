@@ -1,8 +1,8 @@
-package io.tanghuibo.github.comparetools.controller;
+package io.github.tanghuibo.comparetools.controller;
 
-import io.tanghuibo.github.comparetools.param.CompareParam;
-import io.tanghuibo.github.comparetools.service.ComparePropertiesService;
-import io.tanghuibo.github.comparetools.vo.CompareResult;
+import io.github.tanghuibo.comparetools.param.CompareParam;
+import io.github.tanghuibo.comparetools.service.ComparePropertiesService;
+import io.github.tanghuibo.comparetools.vo.CompareResult;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

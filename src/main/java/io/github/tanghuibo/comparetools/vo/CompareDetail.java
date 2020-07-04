@@ -1,4 +1,4 @@
-package io.tanghuibo.github.comparetools.vo;
+package io.github.tanghuibo.comparetools.vo;
 
 /**
  * @author tanghuibo

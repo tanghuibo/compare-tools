@@ -1,9 +1,9 @@
-package io.tanghuibo.github.comparetools.service;
+package io.github.tanghuibo.comparetools.service;
 
 import com.alibaba.fastjson.JSON;
-import io.tanghuibo.github.comparetools.param.CompareParam;
-import io.tanghuibo.github.comparetools.service.impl.ComparePropertiesServiceImpl;
-import io.tanghuibo.github.comparetools.vo.CompareResult;
+import io.github.tanghuibo.comparetools.param.CompareParam;
+import io.github.tanghuibo.comparetools.service.impl.ComparePropertiesServiceImpl;
+import io.github.tanghuibo.comparetools.vo.CompareResult;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;

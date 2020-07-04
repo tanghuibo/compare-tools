@@ -1,4 +1,4 @@
-package io.tanghuibo.github.comparetools.param;
+package io.github.tanghuibo.comparetools.param;
 
 /**
  * @author tanghuibo

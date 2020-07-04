@@ -1,9 +1,9 @@
-package io.tanghuibo.github.comparetools.service.impl;
+package io.github.tanghuibo.comparetools.service.impl;
 
-import io.tanghuibo.github.comparetools.param.CompareParam;
-import io.tanghuibo.github.comparetools.service.ComparePropertiesService;
-import io.tanghuibo.github.comparetools.vo.CompareResult;
-import io.tanghuibo.github.comparetools.vo.CompareResultBuilder;
+import io.github.tanghuibo.comparetools.param.CompareParam;
+import io.github.tanghuibo.comparetools.service.ComparePropertiesService;
+import io.github.tanghuibo.comparetools.vo.CompareResult;
+import io.github.tanghuibo.comparetools.vo.CompareResultBuilder;
 import org.springframework.stereotype.Service;
 
 import java.io.ByteArrayInputStream;

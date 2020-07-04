@@ -1,4 +1,4 @@
-package io.tanghuibo.github.comparetools;
+package io.github.tanghuibo.comparetools;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
